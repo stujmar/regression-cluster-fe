@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Cell from '../Cell/Cell';
 import {title} from './Grid.module.css'
 
