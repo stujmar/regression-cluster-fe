@@ -4,9 +4,14 @@ import {title} from './Grid.module.css'
 
 const Grid = () => {
     const [ gridData, setGridData ] = useState([])
+    const [ gridRow, setGridRow ] = useState([])
 
     const rangeX = useMemo(() => {
         return ["1x","2x","3x","4x"];
+    },[])
+
+    const rangeY = useMemo(() => {
+        return ["1y","2y","3y","4y"];
     },[])
     
     // const rangeY = ["1y","2y","3y","4y"];
