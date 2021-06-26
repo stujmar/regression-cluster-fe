@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Cell from './Cell/Cell';
 
 const FlexGrid = () => {
 
-    console.log(generateRange(100));
+    const [ grid, setGrid] = useState([]);
+    let cellCount = generateRange(100);
+
+    useEffect(() => {
+        setGrid(cellCount.map((index) => {
+            return <Cell key={index}/>
+        }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
 
     return (
-    <>
-
-    </>
+        <>
+            {grid}
+        </>
     )
 }
 
