@@ -1,5 +1,7 @@
 .gridWrapper {
+    margin: 100px auto 0;
     display: flex;
     flex-wrap: wrap;
     width: 250px;
+    border: 1px solid black;
 }
