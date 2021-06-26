@@ -15,10 +15,14 @@ const Grid = () => {
     },[])
     
     useEffect(() => {
-        setGridData(rangeX.map((cell) => {
+        setGridRow(rangeX.map((cell) => {
             return <Cell key={cell} />
         }))
     },[rangeX])
+
+    useEffect(() => {
+        setGridData([...gridData, gridRow]);
+    },[gridRow])
 
     return(<div className={`${title}`}>This is the Grid.{gridData}</div>)
 }
