@@ -1,6 +1,7 @@
 import './App.css';
 import React, {useState, useEffect} from 'react'
 import FlexGrid from './components/FlexGrid/FlexGrid';
+import MyRef from './components/MyRef';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
     </div>
       <div>x: {mouse.x}</div>
       <div>y: {mouse.y}</div>
+      <MyRef />
     </>
   );
 }
