@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cell from './Cell/Cell';
+import { gridWrapper } from './FlexGrid.module.css';
 
 const FlexGrid = () => {
 
@@ -14,9 +15,9 @@ const FlexGrid = () => {
     },[])
 
     return (
-        <>
+        <div className={gridWrapper}>
             {grid}
-        </>
+        </div>
     )
 }
 
