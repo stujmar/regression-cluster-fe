@@ -1,7 +1,30 @@
-.labels {
-  border: 1px solid red;
+.label-wrapper {
   width: min-content;
   margin: 100px auto;
-  padding: 50px;
+  padding: 25px;
   position: relative;
+}
+
+.label {
+  position: absolute;
+}
+
+.x-zero {
+  bottom:0;
+  left:25px;
+}
+
+.x-100 {
+  bottom: 0;
+  right: 25px;
+}
+
+.y-zero {
+  left: 10px;
+  bottom: 20px;
+}
+
+.y-100 {
+  top: 20px;
+  left: -6px;
 }
