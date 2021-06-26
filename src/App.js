@@ -1,10 +1,10 @@
 import './App.css';
-import Grid from './components/Grid/Grid';
+import FlexGrid from './components/FlexGrid';
 
 function App() {
   return (
     <div className="App">
-      <Grid />
+      <FlexGrid />
     </div>
   );
 }
