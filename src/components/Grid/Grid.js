@@ -14,8 +14,6 @@ const Grid = () => {
         return ["1y","2y","3y","4y"];
     },[])
     
-    // const rangeY = ["1y","2y","3y","4y"];
-
     useEffect(() => {
         setGridData(rangeX.map((cell) => {
             return <Cell key={cell} />
