@@ -1,5 +1,5 @@
 import './App.css';
-import FlexGrid from './components/FlexGrid';
+import FlexGrid from './components/FlexGrid/FlexGrid';
 
 function App() {
   return (
