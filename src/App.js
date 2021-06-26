@@ -3,7 +3,7 @@ import FlexGrid from './components/FlexGrid/FlexGrid';
 
 function App() {
   return (
-    <div className="App">
+    <div className="labels">
       <FlexGrid />
     </div>
   );
