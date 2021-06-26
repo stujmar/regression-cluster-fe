@@ -21,7 +21,9 @@ const Grid = () => {
     },[rangeX])
 
     useEffect(() => {
-        setGridData([...gridData, gridRow]);
+        for (let i = 0; i < 4; i++) {
+            setGridData([...gridData, gridRow]);
+        }
     },[gridRow])
 
     return(<div className={`${title}`}>This is the Grid.{gridData}</div>)
