@@ -5,7 +5,7 @@ const MyRef = () => {
     const [renderCount, setRenderCount] = useState(0);
 
     useEffect(() => {
-        // setRenderCount(renderCount + 1);
+        setRenderCount(prevRenderCount => prevRenderCount + 1);
     })
     return (
         <>

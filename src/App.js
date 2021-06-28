@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-    <div className="label-wrapper">
+    {/* <div className="label-wrapper">
       <div className="x-zero label">0</div>
       <div className="y-zero label">0</div>
       <div className="x-100 label">100</div>
@@ -40,7 +40,7 @@ function App() {
         onClick={(() => {console.log("grid clicked")})}>
         <FlexGrid />
       </button>
-    </div>
+    </div> */}
       <div>x: {mouse.x}</div>
       <div>y: {mouse.y}</div>
       <MyRef />
