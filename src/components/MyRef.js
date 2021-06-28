@@ -10,6 +10,7 @@ const MyRef = () => {
     return (
         <>
             <input value={name} onChange={e => setName(e.target.value)}/>
+            <div>My name is {name}</div>
             count:{renderCount}
         </>)
 }
