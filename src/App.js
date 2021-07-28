@@ -17,6 +17,7 @@ function App() {
   const handleMouseMove = (e) => {
     console.log(e);
       console.log('pre-setting grid');
+      console.log(grid, "onload");
       setMouse({
         x:e.nativeEvent.offsetX > 0 ? e.nativeEvent.offsetX : 0,
         y:e.nativeEvent.offsetY > 0 ? e.nativeEvent.offsetY : 0,
