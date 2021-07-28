@@ -16,19 +16,20 @@ function App() {
 
   const handleMouseMove = (e) => {
     console.log(e);
-
+      console.log('pre-setting grid');
       setMouse({
         x:e.nativeEvent.offsetX > 0 ? e.nativeEvent.offsetX : 0,
         y:e.nativeEvent.offsetY > 0 ? e.nativeEvent.offsetY : 0,
         xMax: grid.clientWidth,
         yMax: grid.clientWidth
       })
+      console.log('post-setting grid');
   // console.log(mouse)
   }
 
   return (
     <>
-    {/* <div className="label-wrapper">
+    <div className="label-wrapper">
       <div className="x-zero label">0</div>
       <div className="y-zero label">0</div>
       <div className="x-100 label">100</div>
@@ -40,7 +41,7 @@ function App() {
         onClick={(() => {console.log("grid clicked")})}>
         <FlexGrid />
       </button>
-    </div> */}
+    </div>
       <div>x: {mouse.x}</div>
       <div>y: {mouse.y}</div>
       <MyRef />
