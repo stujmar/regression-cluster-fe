@@ -7,9 +7,10 @@ function App() {
 
   // const [dots, setDots] = useState([]);
   const [ mouse, setMouse] = useState({ x: 0, y: 0, xMax: 0, yMax: 0});
-  let grid  = document.getElementById('grid');
+  const [grid, setGrid] = useState({});
 
   useEffect(() => {
+    setGrid(document.getElementById('grid'));
     console.log('loaded');  
     console.log(grid, "onload");
   },[])
