@@ -8,6 +8,7 @@ function App() {
   // const [dots, setDots] = useState([]);
   const [ mouse, setMouse] = useState({ x: 0, y: 0, xMax: 0, yMax: 0});
   const [grid, setGrid] = useState({});
+  const [points, setPoints] = useState([]);
 
   useEffect(() => {
     setGrid(document.getElementById('grid'));
@@ -24,6 +25,8 @@ function App() {
 
   const handleGridClick = () => {
     console.log(mouse.x, mouse.y);
+    setPoints([...points, {x: mouse.x, y: mouse.y}]);
+    console.log(points);
   };
 
   return (
