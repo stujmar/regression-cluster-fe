@@ -11,21 +11,16 @@ function App() {
 
   useEffect(() => {
     setGrid(document.getElementById('grid'));
-    console.log('loaded');  
-    console.log(grid, "onload");
   },[])
 
   const handleMouseMove = (e) => {
     console.log(e);
-      console.log('pre-setting grid');
-      console.log(grid, "onload");
       setMouse({
         x:e.nativeEvent.offsetX > 0 ? e.nativeEvent.offsetX : 0,
         y:e.nativeEvent.offsetY > 0 ? e.nativeEvent.offsetY : 0,
         xMax: grid.clientWidth,
         yMax: grid.clientWidth
       })
-      console.log('post-setting grid');
   // console.log(mouse)
   }
 
