@@ -31,13 +31,15 @@ function App() {
       <div className="y-zero label">0</div>
       <div className="x-100 label">100</div>
       <div className="y-100 label">100</div>
-      <button 
-        id="grid"
-        className="clean-button"
-        onMouseMove={(e) => handleMouseMove(e)}
-        onClick={(() => {console.log("grid clicked")})}>
-      </button>
-      <FlexGrid />
+      <div className="grid-parent">
+        <button 
+          id="grid"
+          className="clean-button"
+          onMouseMove={(e) => handleMouseMove(e)}
+          onClick={(() => {console.log("grid clicked")})}>
+        </button>
+        <FlexGrid />
+      </div>
     </div>
       <div>x: {mouse.x}</div>
       <div>y: {mouse.y}</div>

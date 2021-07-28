@@ -29,6 +29,12 @@
   left: -6px;
 }
 
+.grid-parent {
+  position: relative;
+  padding: 2px;
+  border: 2px solid greenyellow;
+}
+
 .clean-button {
   background: white;
   border: 1px solid red;
