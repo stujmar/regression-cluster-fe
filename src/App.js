@@ -14,15 +14,17 @@ function App() {
   },[])
 
   const handleMouseMove = (e) => {
-    console.log(e);
       setMouse({
         x:e.nativeEvent.offsetX > 0 ? e.nativeEvent.offsetX : 0,
         y:e.nativeEvent.offsetY > 0 ? e.nativeEvent.offsetY : 0,
         xMax: grid.clientWidth,
         yMax: grid.clientWidth
       })
-  // console.log(mouse)
   }
+
+  const handleGridClick = () => {
+    console.log(mouse.x, mouse.y);
+  };
 
   return (
     <>
@@ -36,7 +38,7 @@ function App() {
           id="grid"
           className="clean-button"
           onMouseMove={(e) => handleMouseMove(e)}
-          onClick={(() => {console.log("grid clicked")})}>
+          onClick={(() => handleGridClick())}>
         </button>
         <FlexGrid />
       </div>
