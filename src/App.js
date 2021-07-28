@@ -36,8 +36,8 @@ function App() {
         className="clean-button"
         onMouseMove={(e) => handleMouseMove(e)}
         onClick={(() => {console.log("grid clicked")})}>
-        <FlexGrid />
       </button>
+      <FlexGrid />
     </div>
       <div>x: {mouse.x}</div>
       <div>y: {mouse.y}</div>
